@@ -1,0 +1,9 @@
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: mxcl/xcodebuild@v1
+        with:
+          platform: macOS
+          action: build
